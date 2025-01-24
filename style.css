@@ -9,6 +9,7 @@
 
 :root {
    --bar_color: red;
+   --bcg_color:rgb(16, 5, 33);
   }
   
 
@@ -24,7 +25,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(16, 5, 33);
+    background-color: var(--bcg_color);
     color: white;
 }
 
@@ -257,55 +258,55 @@ a{
 }
 .bar{
     width: 100%;
-    height: 3vh;
+    height: 1.5vh;
     background-color: white;
     border-radius: 5px;
 }
 .bar .html_level{
     width: 85%;
-    height: 3vh;
+    height: 1.5vh;
     background-color: var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .css_level{
     width: 70%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .js_level{
     width: 70%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .react_level{
     width: 80%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .php_level{
     width: 50%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .python_level{
     width: 40%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
 }
 .bar .django_level{
     width: 35%;
-    height: 3vh;
+    height: 1.5vh;
     background-color:  var(--bar_color);
     border-radius: 5px;
 
@@ -393,3 +394,42 @@ a{
     border-radius: 5px;
   }
 
+
+
+
+
+
+
+  /* footer start */
+  .links{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+  }
+
+  .links a{
+    background-color: white;
+    color: var(--bcg_color) ;
+    width: 100px;
+    text-align: center;
+    padding: 10px ;
+    border-radius: 15px;
+
+  }
+  .links a:hover{
+    box-shadow: 0 4px 6px yellow;
+    background-color:var(--bcg_color);
+    color:  white;
+  }
+
+  .credit{
+    border-top: 1px #ccc solid ;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .credit span{
+    color: yellow;
+  }
