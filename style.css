@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+:root {
+   --bar_color: red;
+  }
+  
+
+p{
+    font-size: 25px;
+}
+
+html{
+    /* font-size: 62.5%; */
+
+    scroll-padding-top: 9rem;
+   
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(16, 5, 33);
+    color: white;
+}
+
+.title {
+   
+    margin: 20px 0px ;
+    position: relative; /* Ensures the pseudo-element is positioned relative to the title */
+    display: inline-block; /* Makes it easier to control underline width */
+    
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position the underline 5px below the title */
+    left: 0;
+    width: 80%; /* Span the entire width of the title */
+    height: 3px; /* Thickness of the underline */
+    background-color: red; /* Color of the underline */
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+h2 span{
+    color: yellow;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.row p{
+    color: white;
+    font-size: 55px;
+    /* background: linear-gradient(to right, red, blue); */
+      /* background-clip: text;
+      color: transparent; */
+      /* font-weight: bold; */
+  }
+
+  
+
+
+
+
+
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 50px;
+  
+
+}
+
+
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nav-items a{
+    font-size: 20px;
+}
+.nav-items a:hover{
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    /* border-right: 5px solid red; */
+    border-radius: 2px;
+}
+
+.nav-last button{
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 3px red;
+    font-size: 24px;
+    background-color:rgb(16, 5, 33) ;
+
+}
+.nav-last button:hover{
+    box-shadow: 4px 4px 5px red;
+    background-color:rgba(255, 255, 255, 0.8) ;
+    color: rgb(16, 5, 33);
+}
+.nav-last a:hover{
+  
+    color: rgb(16, 5, 33);
+}
+
+.logo-img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url('./assets/images/logo.jpg') no-repeat top/cover;
+  
+   
+}
+
+
+/* hero section start */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    /* gap: 100px; */
+}
+
+
+
+
+
+.img-wrapper{
+    width: 40%;
+}
+
+.floating-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: url('./assets/images/DSC03274.jpg') no-repeat top/cover;
+    animation: float 2s ease-in-out infinite;
+    box-shadow: 2px 2px 5px red,  -2px -2px 5px blue;
+    position: relative; /* Allows the mask to overlay */
+    overflow: hidden; 
+  }
+
+  .floating-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black mask with 50% opacity */
+    /* mix-blend-mode: darken; 
+    pointer-events: none; */
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* animation: float 2s ease-in-out infinite; */
+    
+    
+
+    
+
+}
+
+
+
+/* hero section end */
+
+
+/* info section start */
+#info{
+    width: 70%;
+    margin: 20px auto;
+    background-color: black;
+    border: 5px solid black ;
+    border-radius: 10px;
+    
+    
+}
+
+
+pre{
+    font-size: 14px;
+    width: 50%;
+    margin:  0 auto;
+    padding: 30px 10px;
+}
+
+.variable{
+    color: rgb(255, 0, 0);
+}
+.value{
+    color: rgb(225, 255, 0);
+}
+.social-span, .edu_val{
+    color: lightskyblue;
+}
+a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+/* info ends */
+
+/* about me start*/
+
+
+
+/* skill start */
+
+.skill_container{
+    margin: 20px 0px;
+}
+.skill_container h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.bar{
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    border-radius: 5px;
+}
+.bar .html_level{
+    width: 85%;
+    height: 3vh;
+    background-color: var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .css_level{
+    width: 70%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .js_level{
+    width: 70%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .react_level{
+    width: 80%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .php_level{
+    width: 50%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .python_level{
+    width: 40%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+.bar .django_level{
+    width: 35%;
+    height: 3vh;
+    background-color:  var(--bar_color);
+    border-radius: 5px;
+
+}
+
+/* skill section ends */
+
+/* project section starts */
+.project_container{
+  padding: 30px;
+  background-color: black;
+  border-radius: 10px;
+  /* border: 1px solid #fff; */
+  box-shadow: 1px 4px 6px yellow, -1px -4px 6px yellow;
+
+
+}
+
+.project_wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.project_card {
+    width:30%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .project_card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events:none;
+   
+  }
+
+
+
+  .project_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px red;
+
+  }
+  .project_card:hover::after{
+    background-color: transparent;
+  }
+
+  .project_card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* overflow: hidden; */
+   
+  }
+ 
+
+  .project_card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  
+  }
+
+
+  .project_card a {
+
+
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+

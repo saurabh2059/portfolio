@@ -1,0 +1,56 @@
+<pre class="">
+<span>{ </span>
+                  
+<span class="variable">"name"</span> : <span class="value"> "saurabh aryal"</span>,
+                  
+<span class="variable">"DOB"</span>:<span class="value"> "2003/ 01/ 07"</span>,
+                  
+<span class="variable">"eduction"</span>: [
+                  
+{
+<span class="variable"> "SEE"</span>:<span class="edu_val">" Shanti Namuna Secondary School, Butwal " </span>,
+
+<span class="variable"> "GPA"</span>: <span class="edu_val">"3.7"</span> 
+                       
+},
+                  
+{
+<span class="variable"> "+2"</span>:<span class="edu_val">" Kalika Manavgyan Secondary School, Butwal " </span>,
+
+<span class="variable"> "GPA"</span>:<span class="edu_val">"3.29"</span>  
+                       
+},
+                  
+{
+<span class="variable"> "Bachelor"</span>:<span class="edu_val">" Orchid Int'l College, Kathmandu "</span> ,
+
+<span class="variable"> "Currently Studying"</span>:<span class="edu_val">"5<sup>th</sup> sem"</span> 
+                     
+}
+                  
+],
+                  
+<span class="variable">"interest"</span>: [<span class="value"> "books"</span>,<span class="value"> "movies"</span>,<span class="value"> "coding"</span>,<span class="value"> "aviation"</span>],
+                  
+<span class="variable">"skills"</span>: {
+
+<span class="variable">"proficiency"</span>: [<span class="value"> "HTML"</span>,<span class="value"> "CSS"</span>,<span class="value"> "JS"</span>,<span class="value"> "React JS" </span>],
+                  
+<span class="variable">"familiar_with"</span>: [<span class="value"> "C"</span>,<span class="value"> "C++"</span>,<span class="value"> "Python"</span>,<span class="value"> "PHP" </span>],
+                      
+<span class="variable">"database"</span>:[ <span class="value"> "oracle" </span>]
+
+},
+                  
+<span class="variable">"social_media"</span>: {
+
+<span class="variable">"github"</span>:<span class="social-span"><a href="https://www.github.com/saurabh2059"> "https://www.github.com/saurabh2059/"</a></span>,
+
+<span class="variable">"linkedin"</span>:<span class="social-span"><a href="https://www.linkedin.com/in/saurabh-aryal-b326932ab/ "> "https://www.linkedin.com/in/saurabh-aryal-b326932ab/"</a></span>
+}
+                  
+
+
+<span>}</span> 
+                  
+</pre>

@@ -1,0 +1,36 @@
+{
+  "name": "saurabh aryal",
+
+  "DOB": "2003/ 01/ 07",
+
+  "eduction": [
+
+    { "SEE": "Shanti Namuna Secondary School, Butwal",
+     "GPA": "3.7" },
+
+    { "+2": "Kalika Manavgyan Secondary School, Butwal",
+     "GPA": "3.29" },
+
+    {
+      "Bachelor": "Orchid Int'l College, Kathmandu",
+      "Currently Studying": "5th sem"
+    }
+
+  ],
+
+  "interest": ["books", "movies", "coding", "aviation"],
+
+  "skills": {
+    "proficiency": ["HTML", "CSS", "JS", "React JS"],
+
+    "familiar_with": ["C", "C++", "python", "PHP"],
+    
+    "database":["oracle"]
+  },
+
+  "social_media": {
+    "github": "https://www.github.com/saurabh2059",
+    "linkedin": "https://www.linkedin.com/in/saurabh-aryal-b326932ab/"
+  }
+
+}
