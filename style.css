@@ -4,7 +4,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    transition: .2s linear;
+    transition: .3s linear;
 }
 
 :root {
@@ -22,11 +22,29 @@ html{
 
     scroll-padding-top: 9rem;
    
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 body{
     background-color: var(--bcg_color);
     color: white;
+    font-family: "Inconsolata", serif;
+   
+}
+button{
+  font-family: "Inconsolata", serif;
+}
+
+.top_btn{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+
+}
+.top_btn a{
+  /* padding: 20px; */
+  color: white;
+  font-size:40px ;
 }
 
 .title {
@@ -215,6 +233,8 @@ a{
     background-color: black;
     border: 5px solid black ;
     border-radius: 10px;
+
+    box-shadow: 1px 4px 6px yellow,-1px -4px 6px yellow;
     
     
 }
@@ -244,6 +264,9 @@ a{
 /* info ends */
 
 /* about me start*/
+#about p{
+  margin-top: 20px;
+}
 
 
 
@@ -395,12 +418,78 @@ a{
   }
 
 
+  /* contact section start */
+  #contact_me{
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 0 4px 6px yellow,0 -4px 6px yellow;
+    padding: 20px 30px 70px 30px;
+
+  }
+  form{
+    position: relative;
+  }
+ 
+  
+  input,textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #ccc;
+    color: red;
+  }
+  form button{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 30%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color:#ccc ;
+    color: var(--bcg_color);
+    border-radius: 5px;
+    letter-spacing: 2px;
+
+  }
+  textarea{
+    margin: 10px 0px;
+  }
+  button:hover{
+    
+    color:white ;
+    background-color: var(--bcg_color);
+    box-shadow: 0 4px 6px yellow,0 -4px 6px yellow;
+    letter-spacing: 5px;
+
+  }
+
 
 
 
 
 
   /* footer start */
+
+  .share{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin:40px 0px;
+
+  }
+  .share a{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 50%;
+    color: yellow;
+    font-size: 20px;
+  }
+  .share a:hover{
+  
+    background-color: yellow;
+    color: var(--bcg_color);
+  }
   .links{
     margin: 20px 0px;
     display: flex;
@@ -410,7 +499,7 @@ a{
   }
 
   .links a{
-    background-color: white;
+    background-color: #ccc;
     color: var(--bcg_color) ;
     width: 100px;
     text-align: center;
@@ -424,12 +513,45 @@ a{
     color:  white;
   }
 
-  .credit{
+  hr{
     border-top: 1px #ccc solid ;
+  }
+  .credit{
+   
     padding-top: 5px;
     text-align: center;
     font-size: 25px;
   }
   .credit span{
     color: yellow;
+  }
+
+
+
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--bcg_color);
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 20px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    
+  }
+  .download-btn i{
+    margin-left: 10px;
+  }
+
+  .download-btn:hover {
+    background-color: var(--bcg_color);
+    color: yellow;
+    box-shadow: 0px 4px 6px yellow;
+    
+
+    /* justify-content: center; */
   }

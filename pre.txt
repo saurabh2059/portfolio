@@ -54,3 +54,7 @@
 <span>}</span> 
                   
 </pre>
+
+git add .
+git commit -m "commiting "
+git push origin main
