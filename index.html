@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- REPLACE: description / og tags with your own copy -->
+  <title>Saurabh Aryal — Full Stack Developer</title>
+  <meta name="description" content="Saurabh Aryal — Full Stack (MERN) developer building responsive web applications and REST APIs." />
+  <meta name="author" content="Saurabh Aryal" />
+  <meta property="og:title" content="Saurabh Aryal — Full Stack Developer" />
+  <meta property="og:description" content="MERN stack developer building responsive web applications and REST APIs." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>" />
+
+  <!-- Fonts: Sora (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#hero" aria-label="Back to top">
+        <span class="nav__logo-mark" data-site="initials">SA</span>
+        <span class="nav__logo-text" data-site="name">Saurabh Aryal</span>
+      </a>
+
+      <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+        <!-- Nav links injected from SITE_DATA.nav -->
+        <ul class="nav__list" id="nav-list"></ul>
+        <a class="btn btn--ghost btn--sm nav__cv" id="nav-cv" href="assets/cv.pdf" download>
+          <span class="icon" data-icon="download"></span> CV
+        </a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" aria-pressed="false">
+          <span class="icon icon--sun" data-icon="sun"></span>
+          <span class="icon icon--moon" data-icon="moon"></span>
+        </button>
+
+        <button class="hamburger" id="hamburger" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <div class="nav__backdrop" id="nav-backdrop" hidden></div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">
+            <span class="dot" aria-hidden="true"></span>
+            Available for work
+          </p>
+
+          <h1 class="hero__title reveal">
+            <span class="hero__hi">Hi, I'm</span>
+            <span class="hero__name" data-site="name">Saurabh Aryal</span>
+          </h1>
+
+          <p class="hero__role reveal" data-site="role">Full Stack Developer</p>
+          <p class="hero__intro reveal" data-site="heroIntro"></p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#projects" data-scroll>
+              <span class="icon" data-icon="folder"></span> View Projects
+            </a>
+            <!-- CV: put your PDF at assets/cv.pdf (see README) -->
+            <a class="btn btn--outline" id="hero-cv" href="assets/cv.pdf" download>
+              <span class="icon" data-icon="download"></span> Download CV
+            </a>
+            <a class="btn btn--text" id="hero-cv-view" href="assets/cv.pdf" target="_blank" rel="noopener">
+              View CV <span class="icon" data-icon="external"></span>
+            </a>
+          </div>
+
+          <ul class="social social--hero reveal" id="hero-socials" aria-label="Social links"></ul>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="avatar">
+            <!-- REPLACE: assets/images/profile.jpg with your own photo (square, ~600x600) -->
+            <img src="assets/images/profile.png" alt="Portrait of Saurabh Aryal"
+                 width="420" height="420" id="profile-img" />
+            <div class="avatar__ring" aria-hidden="true"></div>
+          </div>
+          <div class="hero__chip hero__chip--1" aria-hidden="true">{ MERN }</div>
+          <div class="hero__chip hero__chip--2" aria-hidden="true">&lt;/&gt; REST API</div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" data-scroll aria-label="Scroll to About">
+        <span class="icon" data-icon="arrow-down"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">01 — About</p>
+          <h2 class="section__title">A bit about me</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal" id="about-text">
+            <!-- Paragraphs injected from SITE_DATA.about.paragraphs -->
+          </div>
+
+          <aside class="about__side reveal">
+            <ul class="stats" id="about-highlights"></ul>
+            <p class="about__fact" id="about-fact"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">02 — Skills</p>
+          <h2 class="section__title">Tools I work with</h2>
+        </header>
+
+        <!-- Skill groups injected from SITE_DATA.skills -->
+        <div class="skills" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">03 — Projects</p>
+          <h2 class="section__title">Selected work</h2>
+          <p class="section__sub">Edit <code>js/projects.js</code> to add your own.</p>
+        </header>
+
+        <!-- Cards injected from PROJECTS -->
+        <div class="projects" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">04 — Contact</p>
+          <h2 class="section__title" id="contact-heading">Let's build something</h2>
+          <p class="section__sub" id="contact-blurb"></p>
+        </header>
+
+        <div class="contact">
+          <!-- mailto-based form: composes an email in the user's mail client -->
+          <form class="form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name"
+                     placeholder="Jane Doe" required />
+              <small class="field__error" data-error-for="cf-name"></small>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email"
+                     placeholder="jane@example.com" required />
+              <small class="field__error" data-error-for="cf-email"></small>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5"
+                        placeholder="Tell me about your project…" required></textarea>
+              <small class="field__error" data-error-for="cf-message"></small>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              <span class="icon" data-icon="send"></span> Send message
+            </button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__side reveal">
+            <p class="contact__label">Prefer something direct?</p>
+            <a class="contact__mail" id="contact-mail" href="#"></a>
+            <ul class="social social--stack" id="contact-socials" aria-label="Contact links"></ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        © <span id="year"></span> <span data-site="name">Saurabh Aryal</span>. Built with plain HTML, CSS &amp; JS.
+      </p>
+      <ul class="social social--footer" id="footer-socials" aria-label="Social links"></ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <span class="icon" data-icon="arrow-up"></span>
+  </button>
+
+  <!-- Data first, logic last -->
+  <script src="js/data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
